@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:background="@color/green_cyan"
+    android:orientation="vertical"
+    tools:context=".CarRemote">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/forward"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttons_style"
+            android:text="↑"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/left"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="↺"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:background="@drawable/buttons_style"/>
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/route"
+            android:layout_width="120dp"
+            android:layout_height="80dp"
+            android:text="route"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:background="@drawable/buttons_style"/>
+        <Space
+            android:layout_width="40dp"
+            android:layout_height="30dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/right"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="↻"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:background="@drawable/buttons_style"/>
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backwards"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="↓"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/buttons_style"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/slowSpeed"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="SLOW"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:background="@drawable/buttons_style"/>
+        <Space
+            android:layout_width="160dp"
+            android:layout_height="40dp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/fastSpeed"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="FAST"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="2"
+            android:layout_below="@+id/slowSpeed"
+            android:background="@drawable/buttons_style"/>
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/connect"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="CONNECT"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/buttons_style"
+        android:textSize="20dp"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Logout"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:background="@drawable/buttons_style"
+        android:textSize="20dp"/>
+
+
+
+
+
+
+
+
+
+</LinearLayout>
